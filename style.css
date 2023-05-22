@@ -1,0 +1,227 @@
+/*универсальный селектор, убирает все отступы у всех элементов на странице */
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+/* Добавляет шрифт */
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+header{ /*Задний прямоугольник MYCOMPANY */
+	width: 100%; /*Ширина*/
+	background: #000; /*Цвет заднего фона*/
+	display: flex; /*Выравнивание*/
+}
+
+.header_logo{ /* Название MYCOMPANY */
+	text-transform: uppercase; /*Заглавные буквы*/
+	color: white; /*Цвет*/
+	font-weight: 800; /*Чтобы текст стал по-жирнее*/
+	font-size: 24px; /* Увеличение букв */
+	cursor: pointer; /* При наведении на буквы будет изменяться курсор как на ссылке*/
+	margin-top:56px; /* Отступ от верха */
+	margin-left: 12%; /* Отступ слева */
+}
+nav{ /* Меню(все вместе) */
+	margin-top:56px; /* Отступ от верха */
+	margin-left: 29%;/* Отступ слева */
+}
+.topnav a{ /* Меню(буквы) */
+	color: white; 
+	text-align: center;
+	padding: 12px 16px; /*Отступы от желтой полоски и от соседних слов*/
+	font-size: 14px;
+	font-weight: bold; /* Жирный шрифт */
+}
+.topnav a:hover{ /* Риска желтого цвета*/
+	border-bottom: 3px solid #fcac45;
+}
+.topnav .icon{
+	display: none; /* Убираются лишние три полоски */
+}
+main{
+	display: flex; /*Чтобы работать с флекс боксами*/
+	flex-direction: column; /*Направление флекс блоков в колонку*/
+	width: 100%; /*Ширина MAIN*/
+}
+main .main_welcome{ /* Фраза WELCOME ON MYCOMPANY*/
+	background:black; /*цвет блока*/
+	text-align: center; /*Расположение текста по центру*/
+	padding: 200px 0 410px 0; /* Отступы от соседних блоков сверху, справа и снизу, слева*/
+}
+main .main_welcome p{ /* фраза We are a digital...*/
+	color: #999999;
+	font-size: 20px;
+}
+main .main_welcome h1{ /*Фраза WELCOME ON MY COMPANY*/
+	color: #999999;
+	font-size: 44px;
+}
+.mycompany{ /* Фраза MYCOMPANY */
+	color: #fcac45;
+}
+.wrapper{ /* Перемещение элементов 2го блока ближе к середине*/
+	width: 76%;
+	margin: 0 auto;
+}
+main .main_about{ 
+	display: flex;
+	padding: 100px 0 100px 0; /*Отступы элементов второго блока сверху и снизу */
+}
+.about_right{ /*Правая часть 2го блока */
+	margin-left: 175px; /* Отступ слева */
+}
+.about_right h1{ /* Линия под заголовком правой части 2го блока*/
+	display: inline-block;
+	border-bottom: 3px solid #fcac45;
+	padding-bottom: 20px;
+}
+.about_right p{
+	margin: 30px 0 50px 0;
+	color: #6c6c6c;
+	text-align: left;
+}
+.about_right li{ /*Маркеры*/
+	background: url(img/mark.png) 0px no-repeat;
+	padding-left: 25px;
+	margin-top: 10px;
+	color: #5a5a5a;
+}
+
+.main_team{ /* Третий блок */
+	background: black;
+	text-align: center;
+	padding: 100px 0 165px 0;
+	color: white;
+}
+.main_team h1{ /* OUR TEAM */
+	font-size: 44px;
+	padding-bottom: 30px;
+}
+
+.photo{ /*Белый круг*/
+	background: #d7d7d7;
+	width: 125px;
+	height: 125px;
+	border-radius: 50%; /* чтобы был круг */
+	margin: 20px auto;
+}
+.team_cards{
+	display: flex; /*чтобы каждый текст был горизонтально*/
+}
+.card{ /*отступы между соседними текстами*/
+	margin: 0 40px;
+}
+.name{
+	font-size: 20px;
+	margin-bottom: 7px;
+}
+.position{
+	font-size: 14px;
+	margin-bottom: 35px;
+}
+.about_position{
+	font-size: 14px;
+}
+
+.services_cards{
+	text-align: center;
+	display: grid;
+	grid-template-columns: auto auto auto auto; /*указывает как выкладываются колонки*/
+	grid-column-gap: 20px; /*указывает размер интервалов между колонками */
+}
+.main_services h1{ /*Позиция заголовка OUR SERVICES*/
+	text-align: center;
+	padding: 100px 0 30px 0;
+}
+.main_services p{ /*Цвет текста и отступы loren ipsum*/
+	color: #6c6c6c;
+	margin-bottom: 100px;
+}
+.services_card h4{ /*отступы в тексте карточек*/
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+
+.contact_from {
+	padding: 100px 0 100px 0;
+}
+.contact_from h1,p{
+	text-align: center;
+
+}
+.contact_from p{
+	margin-bottom: 100px;
+}
+.contact_wrapper{
+	width: 753px;
+	margin: 0 auto;
+	color:#636363;
+}
+.red{
+	color:red;
+}
+.contact_from h1{
+	color:black;
+	margin-bottom: 30px;
+}
+form p{
+	text-align: left;
+}
+.form_inputs{
+	display: flex;
+}
+input{
+	width: 360px;
+	height: 40px;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+input:first-of-type{
+	margin-right: 23px;
+}
+textarea{
+	width: 100%;
+	height:163px;
+}
+
+}
+input,textarea{
+	border:1px solid #999999;
+	margin-top: 5px;
+}
+
+.button_block{
+	display: flex;
+	justify-content: flex-end;
+}
+input[type=submit]  {
+	width: 165px;
+	height: 40px;
+	background: #fcac45;
+	color: white;
+	margin-right: 0;
+	margin-top: 20px;
+}
+@media only screen and (max-width: 1200px) {
+
+}
+@media only screen and (max-width: 992px) {
+
+}
+@media only screen and (max-width: 768px){
+
+}
+@media only screen and (max-width: 480px){
+	
+}
+@media only screen and (max-width: 320px){
+	
+}
